@@ -57,7 +57,7 @@ with DAG(
     # Task 6: Load JSON to DB 2
     load_json_to_db_2 = BashOperator(
         task_id='load_json_to_db_2',
-        bash_command='/bin/python3 /home/anhcu/Project/Stock_project/backend/scripts/load/load_json_to_db_2.py',
+        bash_command='/bin/python3 /home/duc/Project/Stock_project/backend/scripts/load/load_json_to_db_2.py',
     )
 
     # Task 7: Transform to database 3
