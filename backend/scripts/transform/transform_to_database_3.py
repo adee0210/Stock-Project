@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Database connection parameters
     DATABASE_TYPE = 'postgresql'
     ENDPOINT = 'localhost'
-    USER = 'anhcu'
+    USER = 'duc'
     PASSWORD = 'admin'
     PORT = 5432
     DATABASE = 'datasource'
