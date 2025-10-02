@@ -45,7 +45,7 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
     conn = psycopg2.connect(
         host="localhost",
         database="datasource",
-        user="anhcu",
+        user="duc",
         password="admin"
     )
     cur = conn.cursor()
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # Insert data into 'regions' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_regions', 
+            '/home/duc/Project/Stock_project/backend/data/processed/transformed_to_database_regions', 
             '.json'
         ),
         'regions',
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     # Insert data into 'industries' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_industries', 
+            '/home/duc/Project/Stock_project/backend/data/processed/transformed_to_database_industries', 
             '.json'
         ),
         'industries',
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     # Insert data into 'sicindustries' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_sicindustries', 
+            '/home/duc/Project/Stock_project/backend/data/processed/transformed_to_database_sicindustries', 
             '.json'
         ),
         'sicindustries',
